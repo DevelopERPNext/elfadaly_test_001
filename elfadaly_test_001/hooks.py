@@ -9,6 +9,13 @@ app_license = "mit"
 # Includes in <head>
 # ------------------
 
+
+
+
+app_include_css = "/assets/elfadaly_test_001/css/workspace.css"
+
+
+
 # include js, css files in header of desk.html
 # app_include_css = "/assets/elfadaly_test_001/css/elfadaly_test_001.css"
 # app_include_js = "/assets/elfadaly_test_001/js/elfadaly_test_001.js"
