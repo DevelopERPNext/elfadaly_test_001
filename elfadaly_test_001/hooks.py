@@ -9,6 +9,42 @@ app_license = "mit"
 # Includes in <head>
 # ------------------
 
+
+
+
+app_include_css = "/assets/elfadaly_test_001/css/workspace.css"
+
+
+
+
+doctype_js = {
+    "Purchase Order": "public/js/custom_js.js",
+    "Purchase Invoice": "public/js/custom_js.js",
+    "Sales Order": "public/js/custom_js.js",
+    "Sales Invoice": "public/js/custom_js.js",
+    "Purchase Receipt": "public/js/custom_js.js",
+    "Delivery Note": "public/js/custom_js.js",
+    "Stock Entry": "public/js/custom_js.js",
+}
+
+
+doctype_list_js = {
+    "Purchase Order": "public/js/custom_js.js",
+    "Purchase Invoice": "public/js/custom_js.js",
+    "Sales Order": "public/js/custom_js.js",
+    "Sales Invoice": "public/js/custom_js.js",
+    "Purchase Receipt": "public/js/custom_js.js",
+    "Delivery Note": "public/js/custom_js.js",
+    "Stock Entry": "public/js/custom_js.js",
+}
+
+
+
+fixtures = [{"dt": "Custom Field", "filters": [["module", "=", "Elfadaly Test 001"]]}]
+
+
+
+
 # include js, css files in header of desk.html
 # app_include_css = "/assets/elfadaly_test_001/css/elfadaly_test_001.css"
 # app_include_js = "/assets/elfadaly_test_001/js/elfadaly_test_001.js"
