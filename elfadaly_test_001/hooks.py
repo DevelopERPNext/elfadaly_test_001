@@ -9,6 +9,76 @@ app_license = "mit"
 # Includes in <head>
 # ------------------
 
+
+
+
+app_include_css = "/assets/elfadaly_test_001/css/workspace.css"
+
+
+
+
+doctype_js = {
+    "Purchase Order": "public/js/custom_js.js",
+    "Purchase Invoice": "public/js/custom_js.js",
+    "Sales Order": "public/js/custom_js.js",
+    "Sales Invoice": "public/js/custom_js.js",
+    "Purchase Receipt": "public/js/custom_js.js",
+    "Delivery Note": "public/js/custom_js.js",
+    "Stock Entry": "public/js/custom_js.js",
+    "Work Order": "public/js/custom_js.js",
+    "BOM": "public/js/custom_js.js",
+    "Workstation": "public/js/custom_js.js",
+    "Routing": "public/js/custom_js.js",
+    "Item": "public/js/custom_js.js",
+    "POS Invoice": "public/js/custom_js.js",
+}
+
+
+doctype_list_js = {
+    "Purchase Order": "public/js/custom_js.js",
+    "Purchase Invoice": "public/js/custom_js.js",
+    "Sales Order": "public/js/custom_js.js",
+    "Sales Invoice": "public/js/custom_js.js",
+    "Purchase Receipt": "public/js/custom_js.js",
+    "Delivery Note": "public/js/custom_js.js",
+    "Stock Entry": "public/js/custom_js.js",
+}
+
+
+
+
+# ================  Adding ========================
+
+
+
+# override_doctype_class = {
+#     "Work Order": "elfadaly_test_001.overrides.work_order.CustomWorkOrder",
+# }
+
+doc_events = {
+    "Stock Entry": {
+        # "validate": [
+        "before_submit": [
+            # "elfadaly_test_001.elfadaly_test_001.custom.create_print_msg",
+            "elfadaly_test_001.elfadaly_test_001.custom.before_submit_branch",
+        ],
+    },
+    # "Work Order": {
+    #     "validate": [
+    #         # "elfadaly_test_001.elfadaly_test_001.custom.mod_qty",
+    #     ]
+    # }
+}
+
+
+
+
+
+fixtures = [{"dt": "Custom Field", "filters": [["module", "=", "Elfadaly Test 001"]]}]
+
+
+
+
 # include js, css files in header of desk.html
 # app_include_css = "/assets/elfadaly_test_001/css/elfadaly_test_001.css"
 # app_include_js = "/assets/elfadaly_test_001/js/elfadaly_test_001.js"
